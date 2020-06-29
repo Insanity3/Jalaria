@@ -1,4 +1,6 @@
 .logo{
     height: 200px;
     width: 200px;
+    border: 1px solid black;
+    background-image: url("img/logos/9ca707d3-343f-48f6-8f7e-909255b59985_200x200.png");
 }
