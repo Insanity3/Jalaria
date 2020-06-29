@@ -3,10 +3,11 @@
 $dbhost = 'db';
 $dbuser = 'root';
 $dbpass = 'password';
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+$dbname = 'restaurantes';
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname,3306);
 
 
-if(! $conn ){
+if(!$conn ){
     die('Could not connect: ' . mysqli_error());
     }
     
