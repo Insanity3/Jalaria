@@ -2,6 +2,10 @@
 
 
 <main>
+<div class="d-flex justify-content-center">
+<?php Include 'componentes/buscador.php' ?>
+</div>
+<div class="d-flex justify-content-center">
 <?php
     if($result = mysqli_query($conn, $sql)){
     if(mysqli_num_rows($result) != 0){
@@ -19,7 +23,7 @@
         </div>
 
 <?php }}}?>
-
+</div>
 </main>
 
 
