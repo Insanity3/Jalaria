@@ -2,6 +2,6 @@
 require '/var/www/html/conexion.php';
 
 
-$sql = "SELECT * FROM restaurantes";
+$sql = "SELECT * FROM Restaurantes LIMIT 5" ;
 
 
