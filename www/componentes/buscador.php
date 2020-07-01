@@ -11,11 +11,13 @@
                 <option value="5">5€</option>  
         </select>
         <select name="cocina">
-                <option value="1">Japonesa</option> 
-                <option value="2">China</option> 
-                <option value="3">Italiana</option>
-                <option value="10">Vegetariana</option> 
-                <option value="11">Vegana</option> 
+                <option value="japonesa">Japonesa</option> 
+                <option value="china">China</option> 
+                <option value="italiana">Italiana</option>
+                <option value="vegetariana">Vegetariana</option> 
+                <option value="vegana">Vegana</option> 
+                <option value="americana">Americana</option>
+                <option value="thai">Thai</option>
         </select>
         <button type="submit" class="icono fa fa-search" ></button>
 </form>
