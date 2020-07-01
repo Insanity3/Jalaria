@@ -4,6 +4,7 @@
 <main>
 <div class="d-flex justify-content-center">
 <?php Include 'componentes/buscador.php' ?>
+
 </div>
 <div class="d-flex justify-content-center">
 <?php
