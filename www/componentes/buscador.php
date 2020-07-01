@@ -1,4 +1,4 @@
-<?php require 'back/buscadorb.php' ?>
+
 <form action="" name="busqueda" class="buscar" method = "GET">
         <input type="text" name ="nombre" placeholder ="Ca na Carmen">
         <input type="text" name ="localidad" placeholder ="Palma de Mallorca">
@@ -19,5 +19,30 @@
                 <option value="americana">Americana</option>
                 <option value="thai">Thai</option>
         </select>
-        <button type="submit" class="icono fa fa-search" ></button>
+        <input type="submit" name="buscador">
+        <?php
+        require_once 'conexion.php';
+                if($_SERVER['REQUEST_METHOD'] == 'GET'){
+                $nombre = $_GET['nombre'];
+                $localidad = $_GET['localidad'];
+                $precio = $_GET['precio'];
+                $cocina = $_GET['cocina'];
+
+                $sql1 = "SELECT * FROM Restaurantes";
+                //Buscar por nombre
+                if(isset($nombre) && !empty($nombre) ){
+                        $sql1 = $sql1. " WHERE nombre like '%".$nombre."%'";
+                }
+                
+                $resultado = mysqli_query($conn,$sql1);
+                $data = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
+
+                mysqli_free_result($resultado);
+                
+                }
+
+                echo $nombre;
+                print_r($data) ;
+        ?>
 </form>
+
