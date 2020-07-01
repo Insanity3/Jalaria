@@ -17,7 +17,10 @@
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title"><a href="restaurant.php?id=<?php echo $row['Id']; ?>"><?php echo $row['nombre']?></a></h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text"><?php echo $row['valoracion']?></p>
+            <p class="card-text"><?php echo $row['precios']?></p>
+            <p class="card-text"><?php echo $row['localidad']?></p>
+            <p class="card-text"><?php echo $row['telf']?></p>
             <a href="restaurant.php?id=<?php echo $row['Id']; ?>" class="btn btn-primary">Ir al restaurante</a>
         </div>
         </div>
