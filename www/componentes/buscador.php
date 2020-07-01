@@ -33,16 +33,17 @@
                 if(isset($nombre) && !empty($nombre) ){
                         $sql1 = $sql1. " WHERE nombre like '%".$nombre."%'";
                 }
-                
+                // if(isset($localidad) && !empty($localidad) ) {
+                //         $sql1 = $sql1. " AND localidad like '%".$localidad."%'";
+                // }
                 $resultado = mysqli_query($conn,$sql1);
                 $data = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
 
                 mysqli_free_result($resultado);
                 
+                print_r($data);
                 }
-
-                echo $nombre;
-                print_r($data) ;
+               
         ?>
 </form>
 

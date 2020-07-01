@@ -7,6 +7,7 @@ if(isset($_GET['id'])){
     if($result = mysqli_query($conn, $sql)){
         if(mysqli_num_rows($result) > 0){
             $row = mysqli_fetch_array($result);
+            $foto = "img/".$row['foto'];
         }
     }
 

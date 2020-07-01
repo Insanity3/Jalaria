@@ -1,6 +1,6 @@
 <?php require 'back/restaurantb.php';?>
 <?php require 'componentes/header.php'?>
-
+    <img src="<?php echo $foto ?>" alt="">
     <h3><?php echo $row['nombre']?></h3>
     <p><?php echo $row['localidad']?></p>
     <p><?php echo $row['diceccion']?></p>

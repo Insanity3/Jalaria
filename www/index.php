@@ -12,10 +12,11 @@
     if(mysqli_num_rows($result) != 0){
         
         while($row = mysqli_fetch_array($result)){
+            $foto = "img/".$row['foto'];
 ?>
 
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="<?php echo $foto ?>" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title"><a href="restaurant.php?id=<?php echo $row['Id']; ?>"><?php echo $row['nombre']?></a></h5>
             <p class="card-text"><?php echo $row['valoracion']?></p>
