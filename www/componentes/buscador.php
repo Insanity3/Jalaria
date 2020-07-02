@@ -21,12 +21,13 @@
                 <option value="americana">Americana</option>
                 <option value="thai">Thailandesa</option>
         </select>
-        <input type="submit" name="buscador">
         <select name="order" id="">
                 <option value=""></option>
                 <option value="A">Ascendente</option>
                 <option value="D">Descendente</option>
         </select>
+        <input type="submit" name="buscador">
+        
         <?php
         require_once 'conexion.php';
                 if($_SERVER['REQUEST_METHOD'] == 'GET'){
