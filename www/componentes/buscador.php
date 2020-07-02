@@ -1,4 +1,4 @@
-
+<div class="form row d-flex justify-content-center text-center align-items-center">
 <form action="" name="busqueda" class="buscar" method = "GET">
         <input type="text" name ="nombre" placeholder ="Ca na Carmen">
         <input type="text" name ="localidad" placeholder ="Palma de Mallorca">
@@ -43,7 +43,8 @@
                 
                 print_r($data);
                 }
-               
+
         ?>
 </form>
+</div>
 
