@@ -15,7 +15,7 @@
     <div class="row">
         <div class="logo"></div>
         <div class="col-md d-flex justify-content-center align-items-center">
-            <h1 class="p-5">Jalaria   </h1>.
+            <h1>Jalaria   </h1>.
         </div>
     </div>
         
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample03">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
