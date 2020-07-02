@@ -84,7 +84,6 @@
 
                 mysqli_free_result($resultado);
                 
-                print_r($data);
                 
         
                         }      
