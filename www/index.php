@@ -13,6 +13,7 @@
         
         while($row = mysqli_fetch_array($result)){
             $foto = "img/".$row['foto'];
+            $valoracion ="img/".$row['valoracion'];
 ?>
 
         <div class="card" style="width: 18rem;">
