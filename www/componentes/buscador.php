@@ -20,6 +20,7 @@
                 <option value="vegana">Vegana</option> 
                 <option value="americana">Americana</option>
                 <option value="thai">Thailandesa</option>
+                <option value="thai">Mallorquina</option>
         </select>
         <select name="order" id="">
                 <option value=""></option>
