@@ -8,7 +8,12 @@
 </div>
 <div class="d-flex justify-content-center">
 <?php
-    if($result = mysqli_query($conn, $sql)){
+    if(isset($_GET['buscador'])){
+        $res = $sql1;
+    }else{
+        $res = $sql;
+    }
+    if($result = mysqli_query($conn, $res)){
     if(mysqli_num_rows($result) != 0){
         
         while($row = mysqli_fetch_array($result)){
