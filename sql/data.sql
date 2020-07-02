@@ -25,7 +25,7 @@ CREATE TABLE `Restaurantes` (
 
 INSERT INTO `Restaurantes` (`Id`, `nombre`, `localidad`, `dicección`, `cp`, `telf`, `precios`, `valoracion`, `email`, `web`, `horario`, `cocina`, `foto`) VALUES
 (1, 'Josemis Steak House', 'Banyalbufar', 'Carrer Major de Banyalbufar', 7191, '648398279', 5, 4, 'steakhouse@gmail.com', 'www.josemisteakhouse.com', '10:00h-23:00h', 'Americana', 'steak.jpg'),
-(2, 'Veggilenymous', '', '', 0, '', 0, 0, '', '', '', '', 'veggylenymous.jpg'),
+(2, 'Veggilenymous', 'Palma', 'Carrer Aragó', 07008, '678493849', 3, 5, 'veggylenymous@gmail.com', 'www.veggylenymous.com', '9:00h-17:00h', 'Vegetariana', 'veggylenymous.jpg'),
 (3, 'Andrius Wok', '', '', 0, '', 0, 0, '', '', '', '', 'wok.jpg'),
 (4, 'Ca na Carmen y en Pep. Cuina de Mallorca', '', '', 0, '', 0, 0, '', '', '', '', 'canacarmen.jpg'),
 (5, 'Pad Thai Alex', '', '', 0, '', 0, 0, '', '', '', '', 'padthai.jpg');
