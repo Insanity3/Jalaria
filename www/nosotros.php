@@ -1,11 +1,13 @@
 <?php include 'componentes/header.php' ?>
  <!-- ======= About Section ======= -->
- <section id="about" class="about">
+    <section id="about" class="about">
       <div class="container-fluid">
 
         <div class="row">
 
-         
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+            <img src="" alt="">
+          </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
