@@ -50,9 +50,10 @@
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li><a href="nosotros.php">Sobre nosotros</a></li>
             <li><a href="contacto.php">Contacto</a></li>
+            <li><a href="mapa.php">Mapa</a></li>
             <?php if(isset($_SESSION['usuario'])){?>
                         <li class="nav-item">
                             <a class="nav-link" href="">

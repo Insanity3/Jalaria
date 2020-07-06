@@ -1,18 +1,19 @@
-<div class="form row d-flex justify-content-center text-center align-items-center">
-<form action="" name="busqueda" class="buscar" method = "GET">
-        <input type="text" name ="nombre" placeholder ="Ca na Carmen">
-        <input type="text" name ="localidad" placeholder ="Palma de Mallorca">
+<div class="container mt-5">
+<form action="" name="busqueda" class="form" method = "GET">
+        <div class="form-row justify-content-center">
+        <input type="text" name ="nombre" placeholder ="Ca na Carmen" class="col-md-2 form-group">
+        <input type="text" name ="localidad" placeholder ="Palma de Mallorca" class="col-md-2 form-group">
         
-        <select name="precio">
-                <option value=""></option>
+        <select name="precio" class="col-md-2 form-group">
+                <option disabled selected>Precios</option>
                 <option value="1">1€</option> 
                 <option value="2">2€</option> 
                 <option value="3">3€</option>
                 <option value="4">4€</option> 
                 <option value="5">5€</option>  
         </select>
-        <select name="cocina">
-                <option value=""></option>
+        <select name="cocina" class="col-md-2 form-group">
+                <option disabled selected>Cocina</option>
                 <option value="japonesa">Japonesa</option> 
                 <option value="china">China</option> 
                 <option value="italiana">Italiana</option>
@@ -22,13 +23,18 @@
                 <option value="thai">Thailandesa</option>
                 <option value="mallorquina">Mallorquina</option>
         </select>
-        <select name="order" id="">
+        <!-- <select name="order" id="" class="col-md-2 form-group">
                 <option value=""></option>
                 <option value="A">Ascendente</option>
                 <option value="D">Descendente</option>
-        </select>
-        <input type="submit" name="buscador">
+        </select>  -->
+        </div>
+        <div class="text-center">
+                <input type="submit" name="buscador">
+        </div>
         
+        </form>
+</div>
         <?php
         require_once 'conexion.php';
                 if($_SERVER['REQUEST_METHOD'] == 'GET'){
@@ -94,6 +100,5 @@
                 }
 
         ?>
-</form>
-</div>
+
 

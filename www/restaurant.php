@@ -1,26 +1,46 @@
 <?php session_start() ?>
 <?php require 'back/restaurantb.php';?>
 <?php require 'componentes/header.php'?>
-    <div class="row">
-        <div class="col-md d-flex justify-content-center flex-column text-center align-items-center">
-            <img src="<?php echo $foto ?>" alt="" class="cabecera">
-            <h3><?php echo $row['nombre']?></h3>
-            <p><?php echo $row['localidad']?></p>
-            <p><?php echo $row['diceccion']?></p>
-            <p><?php echo $row['cp']?></p>
-            <p><?php echo $row['telf']?></p>
-            <p><?php echo $row['precios']?></p>
-            <p><?php echo $row['valoracion']?></p>
-            <p><?php echo $row['email']?></p>
-            <p><?php echo $row['web']?></p>
-            <p><?php echo $row['horario']?></p>
-            <p><?php echo $row['cocina']?></p>
-            <iframe src="<?php echo $row['maps']?>" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            
-            <!-- Formulario de contacto -->
+<section id="about" class="about">
+      <div class="container-fluid">
 
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("<?php echo $foto ?>");'>
+            <img src="" alt="">
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+            <h3><?php echo $row['nombre']?></h3>
+            <p>Valoracion: <?php echo $row['valoracion']?></p>
+            <p>Precio: <?php echo $row['precios']?></p>
+            <p>Email: <?php echo $row['email']?></p>
+            <p>Www: <?php echo $row['web']?></p>
+            <p>Horario: <?php echo $row['horario']?></p>
+            <p>Tipos de cocina: <?php echo $row['cocina']?></p>
+            <p>Localidad:  <?php echo $row['localidad']?></p>
+            <p>Dirección: <?php echo $row['diceccion']?></p>
+            <p>Código postal: <?php echo $row['cp']?></p>
+            <p>Teléfono: <?php echo $row['telf']?></p>
+            
+            </div>
+            
+
+          </div>
+          
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
         
 
+        
+    <div class="row">
+        <div class="col-md d-flex justify-content-center flex-column text-center align-items-center">
+        <iframe src="<?php echo $row['maps']?>" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <!-- Formulario opinion -->
                 <?php 
                 if(isset($_SESSION['usuario'])){
@@ -53,8 +73,10 @@
                 </form>
 
 
-            </div>
-    </div>    
+            </div>  
+            </div> 
+            </div> 
+          
 
 
 <?php require 'componentes/footer.php'?>
