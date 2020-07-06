@@ -51,6 +51,7 @@
                         }else{
                                 $sql1 = $sql1. " AND localidad like '%".$localidad."%'";
                         }   
+                        
                 }
                 // Precio
                 if(isset($precio) && !empty($precio)){
@@ -73,10 +74,10 @@
                 //Orden
                 if(isset($order) && !empty($order) ){
                         if ($order=="D"){
-                                $sql1 = $sql1. "ORDER BY nombre DESC";
+                                $sql1 = $sql1. " ORDER BY nombre DESC";
                         }
                         if ($order=="A"){
-                                $sql1 = $sql1. "ORDER BY nombre ASC";
+                                $sql1 = $sql1. " ORDER BY nombre ASC";
                         }
                 }
                 
