@@ -1,6 +1,8 @@
 <?php 
-include 'componentes/header.php'; 
+session_start();
 require 'back/registerb.php';
+include 'componentes/header.php'; 
+
 ?>
 
 <form method="POST"  name="register" class="sesion">

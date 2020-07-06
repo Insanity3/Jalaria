@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -35,8 +36,10 @@
     
 </head>
 <body>
+
 <?php require 'back/indexb.php'?>
     <header>
+    
     <div class="row">
         <div class="logo"></div>
         <div class="col-md d-flex justify-content-center align-items-center">
@@ -57,9 +60,25 @@
                     <li class="nav-item">
                     <a class="nav-link" href="nosotros.php">Sobre nosotros</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="login.php">Log in</a>
-                    </li>
+                    
+                    <?php if(isset($_SESSION['usuario'])){?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                            <?php echo $_SESSION['usuario'];?>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="back/cerrar.php">
+                            Cerrar sesión
+                            </a>
+                        </li>
+                        <?php }else{?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php">
+                            Log In
+                            </a>
+                        </li>
+                    <?php }?>
                 </ul>
             
             </div>

@@ -1,6 +1,8 @@
 <?php 
-include 'componentes/header.php';
+session_start();
 require 'back/loginb.php';
+include 'componentes/header.php';
+
 ?>
 
 <form method="POST" name="login" class="sesion">

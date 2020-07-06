@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                 
                 mysqli_close($conn);
 
-                header('index.php');
+                header('Location:index.php');
                 }
 
 
