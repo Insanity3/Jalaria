@@ -6,7 +6,8 @@
 <?php Include 'componentes/buscador.php' ?>
 
 </div>
-<div class="container">
+<section id="why-us" class="why-us">
+<div class="container cards">
     <div class="row justify-content-center">
 
     
@@ -25,33 +26,26 @@
 ?>
 
         <div class="col-lg-4 mt-4 mt-lg-0 p-4">
-            <div class="box">
+            <div class="box text-center">
             <img class="card-img-top" src="<?php echo $foto ?>" alt="Card image cap">
             
-                <h4><a href="restaurant.php?id=<?php echo $row['Id']; ?>"><?php echo $row['nombre']?></a></h4>
+            <h4><a class="hover" href="restaurant.php?id=<?php echo $row['Id']; ?>"><?php echo $row['nombre']?></a></h4>
             
-                <p><?php echo $row['valoracion']?></p><p><?php echo $row['precios']?></p>
-           
-                <p><?php echo $row['localidad']?></p>
-                <p><?php echo $row['telf']?></p>
+
+                <p><i class="fas fa-star"></i> <?php echo $row['valoracion']?></p>
+                <p><i class="fas fa-euro-sign"></i> <?php echo $row['precios']?></p>
+
+                <p><i class="fas fa-map-marked-alt"></i> <?php echo $row['localidad']?></p>
+                <p><i class="fas fa-phone"></i> <?php echo $row['telf']?></p>
                 <a href="restaurant.php?id=<?php echo $row['Id']; ?>" class="btn btn-warning">Ir al restaurante</a>
             </div>
         </div>
-        <!-- <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="<?php echo $foto ?>" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title"><a href="restaurant.php?id=<?php echo $row['Id']; ?>"><?php echo $row['nombre']?></a></h5>
-            <p class="card-text"><?php echo $row['valoracion']?></p>
-            <p class="card-text"><?php echo $row['precios']?></p>
-            <p class="card-text"><?php echo $row['localidad']?></p>
-            <p class="card-text"><?php echo $row['telf']?></p>
-            <a href="restaurant.php?id=<?php echo $row['Id']; ?>" class="btn btn-primary">Ir al restaurante</a>
-        </div>
-        </div> -->
+        
 
 <?php }}}?>
 </div>
 </div>
+</section>
 </main>
 
 

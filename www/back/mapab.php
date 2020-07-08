@@ -1,10 +1,9 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBumXNGkI9zeuG-yscY_m56aE5sZVOphvI"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBumXNGkI9zeuG-yscY_m56aE5sZVOphvI"></script>
 
-
-	
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 	<script>
-		function findMe(){
+        
+        function findMe(){
 			var output = document.getElementById('map');
 
 			// Verificar si soporta geolocalizacion
@@ -20,7 +19,7 @@
 				var latitude = posicion.coords.latitude;
 				var longitude = posicion.coords.longitude;
 
-				var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyBumXNGkI9zeuG-yscY_m56aE5sZVOphvI";
+				var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=1000x400&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyBumXNGkI9zeuG-yscY_m56aE5sZVOphvI";
 
 				output.innerHTML ="<img src='"+imgURL+"'>";
 

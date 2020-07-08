@@ -60,7 +60,7 @@
                             <?php echo $_SESSION['usuario'];?>
                             </a>
                         </li>
-                        <li class="book-a-table text-center"><a href="cerrar.php">Log out</a></li>
+                        <li class="book-a-table text-center"><a href="back/cerrar.php">Log out</a></li>
                         <?php }else{?>
                             <li class="book-a-table text-center"><a href="login.php">Log in</a></li>
                     <?php }?>
@@ -70,7 +70,7 @@
 
         </div>
 </header><!-- End Header -->
-
+<body onload="findMe()">
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container">

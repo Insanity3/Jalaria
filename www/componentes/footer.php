@@ -18,6 +18,7 @@
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    </body>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>

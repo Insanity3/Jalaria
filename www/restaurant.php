@@ -40,37 +40,47 @@
         
     <div class="row">
         <div class="col-md d-flex justify-content-center flex-column text-center align-items-center">
+          <img src="<?php echo $img?>" alt="">
         <iframe src="<?php echo $row['maps']?>" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <!-- Formulario opinion -->
                 <?php 
                 if(isset($_SESSION['usuario'])){
                 ?>
-                    <div>
-                    <h3>Deja tu valoración!</h3>
-                        <form action="" method="POST" name="opinion">
-                            <select name="valoracion" id="">
-                                <option value=""></option>
+                    <div container mt-5>
+              
+                    <h3 class="p-5">Deja tu valoración!</h3>
+                        <form action="" method="POST" name="opinion" class="form">
+                        <div class="form-row justify-content-center">
+                            <select name="valoracion" id="" class="col-md-4 form-group">
+                                <option disabled selected>Valoración</option>
                                 <option value="1">1 estrella</option> 
                                 <option value="2">2 estrellas</option> 
                                 <option value="3">3 estrellas</option>
                                 <option value="4">4 estrellas</option> 
                                 <option value="5">5 estrellas</option>
                             </select>
-                            <textarea name="opinion" id="" >
+                            <textarea name="mensaje" id="" class="col-md-8 form-group" placeholder="Escríbe tu mensaje">
                             </textarea>
+                            <input type="submit" name="enviar">
+                            </div>
                         </form>
                     </div>
                 <?php
                 }
                 ?>
                 <!-- Formulario de reservas -->
-                <h3>Reserva!</h3>
-                <form action="" method="POST" name="reserva">
-                    <input type="text" name="nombre">
+                <div class="container">
+                <h3 class="p-5">Reserva!</h3>
+                <form action="" method="POST" name="reserva" class="form">
+                <div class="form-row justify-content-center">
+                    <input type="text" name="nombre" placeholder="Ca na Carmen">
                     <input type="date" name="dia" step="1" min="2020-01-01" mas="2022-01-01">
                     <input type="time" name="hora">
-                    <textarea name="comensales"></textarea>
+                    <textarea name="comensales" placeholder="Nombre de los comensales"></textarea>
+                    <input type="submit" name="enviar">
+                    </div>
                 </form>
+                </div>
 
 
             </div>  

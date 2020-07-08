@@ -1,5 +1,5 @@
 <div class="container mt-5">
-<form action="" name="busqueda" class="form" method = "GET">
+<form action="" name="busqueda" class="form mt-5" method = "GET">
         <div class="form-row justify-content-center">
         <input type="text" name ="nombre" placeholder ="Ca na Carmen" class="col-md-2 form-group">
         <input type="text" name ="localidad" placeholder ="Palma de Mallorca" class="col-md-2 form-group">

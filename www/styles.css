@@ -1,27 +1,19 @@
-h1,nav{
-    font-family: 'Bad Script', cursive;
-}
-.logo{
-    height: 200px;
-    width: 200px;
-    background-image: url("img/logos/9ca707d3-343f-48f6-8f7e-909255b59985_200x200.png");
-}
-h1{
-    font-size: 100px;
-    padding: 0;
-    margin: 0;
-    color: rgb(255, 255, 255);
-}
+
+
 .valoracion{
     height: 20px;
 }
-.cabecera{
-    width: 70%;
-    margin: 0 auto;
-}
-header{
-    background-color: rgb(68, 76, 83);
-}
+
+
 .form{
     height: 300px;
+}
+.hover:hover,.box:hover{
+    color: beige !important; 
+}
+.cards{
+    margin-top: -200px;
+}
+.btn-warning:hover{
+    background-color: beige;
 }
